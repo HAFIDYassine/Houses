@@ -1,0 +1,15 @@
+<ion-header [ translucent ]=" true ">
+  <ion-toolbar >
+    <ion-title >
+      House
+    </ion-title >
+  </ion-toolbar >
+</ion-header >
+
+<ion-content [ fullscreen ]="true" class ="ion-padding ">
+  <ion-grid >
+    <app-house *ngFor ="let item of houses "
+      [house]= item>
+    </app-house>
+  </ion-grid> 
+</ion-content>

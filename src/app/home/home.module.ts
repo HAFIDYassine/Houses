@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
+import { HouseRepository } from './repository/house-repository';
+import { HouseRepositoryDummyImpl } from './repository/house-repository-dummy-impl.service';
+import { HouseComponent } from './components/house/house.component';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
@@ -14,6 +17,12 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage,
+  HouseComponent
+  ],
+  providers: [{
+    provide: HouseRepository,
+    useClass: HouseRepositoryDummyImpl,
+  }],
 })
 export class HomePageModule {}

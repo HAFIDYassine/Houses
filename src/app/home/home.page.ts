@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { House } from './data/house';
 
 @Component({
   selector: 'app-home',
