@@ -6,7 +6,7 @@ import { HomePage } from './home.page';
 import { HouseRepository } from './repository/house-repository';
 import { HouseRepositoryDummyImpl } from './repository/house-repository-dummy-impl.service';
 import { HouseComponent } from './components/house/house.component';
-
+import { HouseinfosComponent } from './components/houseinfos/houseinfos.component';
 import { HomePageRoutingModule } from './home-routing.module';
 
 
@@ -18,7 +18,9 @@ import { HomePageRoutingModule } from './home-routing.module';
     HomePageRoutingModule
   ],
   declarations: [HomePage,
-  HouseComponent
+  HouseComponent,
+  HouseinfosComponent
+  
   ],
   providers: [{
     provide: HouseRepository,

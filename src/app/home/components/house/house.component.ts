@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HouseRepository } from '../../repository/house-repository';
-import { House } from '../../data/house';
+import { House } from '../../data/House';
 @Component({
   selector: 'app-house',
   templateUrl: './house.component.html',

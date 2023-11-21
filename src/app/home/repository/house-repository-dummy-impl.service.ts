@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { House } from 'src/app/home/data/house';
+import { House } from 'src/app/home/data/House';
 import { HouseRepository } from 'src/app/home/repository/house-repository';
 
 @Injectable({

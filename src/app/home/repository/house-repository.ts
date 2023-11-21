@@ -1,4 +1,4 @@
-import { House } from 'src/app/home/data/house';
+import { House } from 'src/app/home/data/House';
 export abstract class HouseRepository {
     public abstract get houses(): House[]
 }
