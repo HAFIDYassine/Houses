@@ -11,7 +11,7 @@ export class HouseComponent  implements OnInit {
   constructor(private houseRepository: HouseRepository) { }
 
   ngOnInit(): void {
-    this.houses = this.houseRepository.houses;
+    this.houses=this.houseRepository.houses;
   }
 
 }

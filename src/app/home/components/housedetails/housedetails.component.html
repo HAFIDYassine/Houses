@@ -1,0 +1,44 @@
+<!--<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title *ngIf="house">
+      {{house.housetype}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class ="ion-padding">
+  <ion-grid *ngIf="house">
+    <ion-row>
+      <ion-input label ="" labelPlacement ="stacked" [(ngModel)]="house.housetype"></ion-input>
+    </ion-row>
+    <ion-row >
+      <ion-input label ="" labelPlacement ="stacked" type ="number" inputmode ="decimal"
+          [(ngModel)]="house.price"> </ion-input>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+/-->
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-grid *ngIf="house">
+    <ion-row>
+      <ion-input label="Numéro du bien" disabled="true" [(ngModel)]="house.numero"></ion-input>
+    </ion-row>
+    <ion-row>
+      <!-- Use ion-select for the property type -->
+      <ion-select [(ngModel)]="house.housetype">
+        <ion-select-option value="Appartement">Appartement</ion-select-option>
+        <ion-select-option value="Maison">Maison</ion-select-option>
+      </ion-select>
+    </ion-row>
+    <ion-row>
+      <ion-input label="Nombre de pièces" type="number" [(ngModel)]="house.rooms"></ion-input>
+    </ion-row>
+    <ion-row>
+      <ion-input label="Prix" type="number" [(ngModel)]="house.price"></ion-input>
+    </ion-row>
+    <ion-row>
+      <ion-img [src]="house.image"></ion-img>
+    </ion-row>
+  </ion-grid>
+</ion-content>

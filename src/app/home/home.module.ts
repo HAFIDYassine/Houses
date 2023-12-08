@@ -8,6 +8,7 @@ import { HouseRepositoryDummyImpl } from './repository/house-repository-dummy-im
 import { HouseComponent } from './components/house/house.component';
 import { HouseinfosComponent } from './components/houseinfos/houseinfos.component';
 import { HomePageRoutingModule } from './home-routing.module';
+import { HousedetailsComponent } from './components/housedetails/housedetails.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HomePageRoutingModule } from './home-routing.module';
   ],
   declarations: [HomePage,
   HouseComponent,
-  HouseinfosComponent
+  HouseinfosComponent,
+  HousedetailsComponent
   
   ],
   providers: [{
